@@ -26,6 +26,13 @@ public class Renderer
     static SKShader? currentShader;
     static float X, Y;
 
+    /*[UnmanagedCallersOnly(EntryPoint = "Render")]
+    public static void RenderNew() 
+    {
+        var game = new MGNamespace.Game1();
+        game.Run();
+    }*/
+
     [UnmanagedCallersOnly(EntryPoint = "Render")]
     public static void Render()
     {
